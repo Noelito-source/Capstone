@@ -1,0 +1,324 @@
+/* H1 start */
+body .account_h1{
+    margin-top: .5%;
+    margin-left: 18.5%;
+}
+
+.cssbuttons-io-button {
+    margin-left: 90.5%;
+    margin-top: -4%;
+    display: flex;
+    align-items: center;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 0.7em 1.4em 0.7em 1.1em;
+    color: white;
+    background: #ad5389;
+    background: linear-gradient(0deg, rgba(20,167,62,1) 0%, rgba(102,247,113,1) 100%);
+    border: none;
+    letter-spacing: 0.05em;
+    border-radius: 20em;
+  }
+  
+  .cssbuttons-io-button:hover {
+    box-shadow: 0 0.5em 1.5em -0.5em #14a73e98;
+  }
+  
+  .cssbuttons-io-button:active {
+    box-shadow: 0 0.3em 1em -0.5em #14a73e98;
+  }
+/* H1 end */
+
+/* ACCOUNT DATA TABLE START */
+.dataTable {
+    width: 82.5%;
+    margin-left: 16.5%;
+}
+.content-table {
+    width: 100%;
+    margin: 10px;
+    border-collapse: collapse;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.content-table thead tr {
+    background-color: #3a86ff;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+    font-weight: 500;
+    padding: 6px 20px;
+    font-size: 15px;
+}
+
+.content-table tbody tr td a{
+    text-decoration: none;
+}
+
+.content-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+/* Operator Button Start */
+.view{
+    background: none;
+    border: none;
+    color: black;
+}
+
+.edit{
+    background: none;
+    border: none;
+    color: blue;
+}
+
+.delete{
+    background: none;
+    border: none;
+    color: red;
+}
+
+td button{
+    font-size: 24px;
+    text-decoration: none;
+}
+/* Operator Button End */
+
+/* ACCOUNT DATA TABLE END */
+
+/* PAGINATION START */
+.pagination{
+    position: absolute;
+    margin-left: 18.5%;
+
+}
+
+.p-10{
+    position: absolute;
+    margin-left: 18.5%;
+    margin-top: 3%;
+}
+/* PAGINATION END */
+
+/* Register Modal Start */
+#register-modal-form{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 100;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+ .modal-form{
+    background: #e6ecf0;
+    padding: 10px 0px 20px 0px;
+    border-radius: 10px;
+    width: 400px;
+    text-align: center;
+}
+
+.top-form{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.top-form .close-modal-form{
+    cursor: pointer;
+    padding: 0 20px;
+    font-size: 30px;
+}
+
+/* Register Modal End */
+
+.register{
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   justify-content: center;
+   gap: 10px;
+}
+
+.container.page {
+   width: 600px;
+}
+
+h1 {
+   margin: 0;
+   line-height: 1;
+}
+
+.title {
+   display: block;
+   text-align: center;
+}
+
+.title.page {
+   text-transform: capitalize;
+}
+
+.name {
+   color: #fff;
+}
+
+.txtbox {
+   display: block;
+   background: #fff;
+   width: 100%;
+   height: 50px;
+   margin: 0 0 10px;
+   padding: 15px;
+   border: none;
+   font-size: 20px;
+   border-radius: 8px;
+   font-family: "Calibri", sans-serif;
+   font-weight: 500;
+}
+.txtbox1 {
+   display: block;
+   background: #fff;
+   width: 100%;
+   height: 50px;
+   margin-bottom: -9%;
+   padding: 15px;
+   border: none;
+   font-size: 18px;
+   border-radius: 8px;
+   font-family: "Calibri", sans-serif;
+   font-weight: 500;
+}
+
+.txtbox_select {
+   display: block;
+   background: #fff;
+   width: 100%;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   padding: 10px;
+   border: none;
+   font-size: 20px;
+   border-radius: 8px;
+   font-family: "Calibri", sans-serif;
+}
+
+.registration .txtbox {
+   text-align: left;
+}
+
+.txtbox:first-of-type {
+   margin: 30px 0 10px;
+}
+
+.txtbox:last-of-type {
+   margin: 0;
+}
+
+.txtbox:hover,
+.txtbox:focus {
+   background: #f8f8f8;
+}
+
+.btn {
+   color: #fff;
+   padding: 12px;
+   width: 100%;
+   opacity: 0.9;
+   outline: none;
+   text-transform: uppercase;
+   border: none;
+   text-decoration: none;
+   text-align: center;
+   font-family: "Calibri", sans-serif;
+   cursor: pointer;
+   text-decoration: none;
+   display: block;
+   border-radius: 8px;
+   font-size: 18px;
+}
+
+.btn:hover {
+   opacity: 1;
+}
+
+.btnLogout {
+   margin: 0;
+}
+
+.btnRegister {
+   background: #e91e63;
+}
+
+.btnWrapper .btn:first-child {
+   margin: 20px 0 10px ;
+}
+.btnWrapper .btn:last-child {
+   margin: 0;
+}
+.btn-page {
+   text-align: left;
+   display: flex;
+   margin-top: 40px;
+}
+.btn-page a {
+   display: inline-block;
+   width: 50%;
+   margin: 0!important;
+   border-radius: 0;
+}
+.btn-page a:first-child {
+   border-top-left-radius: 10px;
+   border-bottom-left-radius: 10px;
+}
+.btn-page a:last-child {
+   border-top-right-radius: 10px;
+   border-bottom-right-radius: 10px;
+}
+
+.message {
+   width: 100%;
+   padding: 20px;
+   font-size: 18px;
+   background: #9e9e9e;
+   color: #fff;
+   line-height: 1;
+   margin-top: 20px;
+   border-radius: 8px;
+   word-wrap: break-word;
+}
+
+.img-block {
+   margin-bottom: 30px;
+   display: block;
+}
+
+.img-block img {
+   height: 180px;
+   width: 180px;
+   margin: 0 auto 10px;
+   display: block;
+   border: 4px solid #a3a3a3;
+   border-radius: 20px;
+}
+.img-block button {
+   background: #ff5722;
+   color: #f1f1f1;
+   width: 230px;
+   margin: 0 auto;
+}
+.imgBlock:hover {
+   cursor: pointer;
+}

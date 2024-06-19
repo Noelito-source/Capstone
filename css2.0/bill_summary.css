@@ -1,0 +1,197 @@
+
+/* H1 start */
+body .account_h1{
+    margin-top: .5%;
+    margin-left: 18.5%;
+}
+/* H1 end */
+
+.card_pending {
+  margin-left: 21%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 19.5%;
+  margin-top: 2%;
+  width: 350px;
+  height: 150px;
+  border-radius: 30px;
+  background: #000000;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.card_pending2 {
+  width: 80px;
+  height: 80px;
+  border-radius: 12px;
+  background: #f4f3ee;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.card_pending2 i{
+  display: flex;
+  justify-content: center;
+  padding: 25%;
+}
+
+/* ACCOUNT DATA TABLE START */
+.dataTable {
+  width: 82.5%;
+  margin-left: 16.5%;
+}
+.content-table {
+  width: 100%;
+  margin: 10px;
+  border-collapse: collapse;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.content-table thead tr {
+  background-color: #3a86ff;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+  font-weight: 500;
+  padding: 6px 20px;
+  font-size: 15px;
+}
+
+.content-table tbody tr td a{
+  text-decoration: none;
+}
+
+.content-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+/* Operator Button Start */
+.view{
+  background: none;
+  border: none;
+  color: blue;
+}
+
+.bill{
+  background: none;
+  border: none;
+  color: black;
+}
+
+td button{
+  font-size: 24px;
+  text-decoration: none;
+}
+/* Operator Button End */
+
+/* ACCOUNT DATA TABLE END */
+
+/* PAGINATION START */
+.pagination{
+  position: absolute;
+  margin-left: 18.5%;
+
+}
+
+.p-10{
+  position: absolute;
+  margin-left: 18.5%;
+  margin-top: 3%;
+}
+/* PAGINATION END */
+
+/* Register Modal Start */
+.register-form h2{
+  letter-spacing: 2px;
+  margin-top: 10px;
+  margin-bottom: 5%;
+  font-size: 40px;
+  text-align: center;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.register-form form input{
+  width: 90%;
+  margin-bottom: 5px;
+  padding: 12px 12px;
+  box-sizing: border-box;
+  border: 1px solid #d0d5d8;
+  border-radius: 3px; 
+}
+
+.register-form .submit-btn-1{
+  margin-top: 3%;
+  margin-left: 13%;
+  padding: 10px 0;
+  width: 75%;
+  background: #5dca88;
+  border: 0;
+  border-radius: 12px;
+  color: white;
+  margin-bottom: 2%;
+  cursor: pointer;
+}
+
+.register-form .label{
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.register-form .input {
+  height: 45px;
+  padding: 12px;
+  margin-top: -2%;
+  margin-left: 5%;
+  border-radius: 12px;
+  border: 1.5px solid lightgrey;
+  outline: none;
+  transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+  box-shadow: 0px 0px 20px -18px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+  font-weight: 500;
+}
+
+.register-form .input:hover {
+  border: 2px solid lightgrey;
+  box-shadow: 0px 0px 20px -17px;
+}
+
+
+.register-form .input:focus {
+   border: 2px solid grey;
+}
+
+.input-2{
+  width: 75%;
+  height: 47px;
+  padding: 12px;
+  margin-top: -2%;
+  margin-bottom: 4%;
+  border-radius: 12px;
+  border: 1.5px solid lightgrey;
+  outline: none;
+  transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+  box-shadow: 0px 0px 20px -18px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+  font-weight: 500;
+}
+
+.register-form .input-2:hover {
+  border: 2px solid lightgrey;
+  box-shadow: 0px 0px 20px -17px;
+}
+
+
+.register-form .input-2:focus {
+   border: 2px solid grey;
+}
+/* Register Modal End */

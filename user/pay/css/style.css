@@ -1,0 +1,24 @@
+.w-450 {
+	width: 450px;
+}
+.vh-100 {
+	min-height: 100vh;
+}
+.w-350 {
+	width: 350px;
+}
+
+	#btnback{
+		transform: translateY( 20rem);
+	}
+#bil1{
+	color: #1769d4;
+	transform: translateY(6.3rem);
+	margin-left: 6rem;
+  }
+  #p2 {
+	color: rgb(185, 175, 175);
+	transform: translateY(4.2rem);
+	margin-left: 2rem;
+text-decoration: none;
+  }

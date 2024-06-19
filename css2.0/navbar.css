@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+/* SIDE BAR START */
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 230px;
+    background: #11101d;
+    padding: 6px 14px;
+    transition: all 0.5s ease;
+}
+.sidebar .logo_content .logo{
+    margin-top: 5%;
+    color: #fff;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+    opacity: 1;
+    pointer-events: none;
+    transition: all 0.5s ease;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    text-align: center;
+}
+.logo_content .logo img{
+    margin-left: 28%;
+    width: 85px;
+    height: 85px;
+}
+.logo_content .logo .logo_name{
+    margin-top: 5%;
+    font-size: 19.7px;
+    font-weight: 500;
+}
+.sidebar ul{
+    margin-top: 60%;
+}
+.sidebar ul li{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin: 0 5px;
+    list-style: none;
+    line-height: 50px;
+    font-size: 19px;
+}
+.sidebar ul li a{
+    margin-left: -5%;
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    transition: all 0.4s ease;
+    border-radius: 12px;
+    white-space: nowrap;
+}
+.sidebar ul li a:hover{
+    color: #11101d;
+    background: #fff;
+}
+.sidebar ul li i{
+    height: 50px;
+    min-width: 50px;
+    border-radius: 12px;
+    line-height: 50px;
+    text-align: center;
+}
+.sidebar .links_name{
+    opacity: 1;
+    pointer-events: auto;
+    transition: all 0.5s ease;
+}
+.sidebar .profile_content{
+    position: absolute;
+    color: #fff;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.sidebar .profile_content .profile{
+    display: flex;
+    position: relative;
+    padding: 10px 6px;
+    height: 60px;
+    background: none;
+    transition: all 0.4s ease;
+}
+.sidebar.active .profile_content .profile{
+    background: #1d1b31;
+}
+.profile_content .profile .profile_details{
+    display: flex;
+    align-items: center;
+    opacity: 1;
+    pointer-events: auto;
+    white-space: nowrap;
+}
+.profile .profile_details img{
+    height: 45px;
+    width: 45px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+.profile .profile_details .name_job{
+    margin-left: 10px;
+}
+.profile .profile_details .name{
+    font-size: 15px;
+    font-weight: 400;
+}
+.profile .profile_details .job{
+    font-size: 14px;
+}
+.profile #log_out{
+    position: absolute;
+    margin-left: 28%;
+    bottom: 5px;
+    transform: translateX(-50%);
+    min-width: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    border-radius: 12px;
+    text-align: center;
+    transition: all 0.4s ease;
+    background: #1d1b31;
+} 
+.profile i{
+    color: #fff;
+}
+/* SIDE BAR END */

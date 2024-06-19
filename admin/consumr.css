@@ -1,0 +1,595 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+.body{
+    position: absolute;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* SIDE BAR START */
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 230px;
+    background: #000000;
+    padding: 6px 14px;
+    transition: all 0.5s ease;
+}
+
+.sidebar .logo_content .logo{
+    margin-top: 5%;
+    color: #fff;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+    opacity: 1;
+    pointer-events: none;
+    transition: all 0.5s ease;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    text-align: center;
+}
+
+.logo_content .logo img{
+    margin-left: 28%;
+    width: 85px;
+    height: 85px;
+}
+
+.logo_content .logo .logo_name{
+    margin-top: 5%;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.sidebar ul{
+    margin-top: 60%;
+}
+
+.sidebar ul li{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin: 0 5px;
+    list-style: none;
+    line-height: 50px;
+    font-size: 18px;
+}
+
+.sidebar ul li a{
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    transition: all 0.4s ease;
+    border-radius: 12px;
+    white-space: nowrap;
+}
+
+.sidebar ul li a:hover{
+    color: #11101d;
+    background: #fff;
+}
+#consbg {
+    text-decoration: none;
+    color: #11101d;
+    display: flex;
+    align-items: center;
+    transition: all 0.4s ease;
+    border-radius: 1px 12px 12px 1px;
+    white-space: nowrap;
+    background: #fff;
+    width: 100%;
+}
+#consa{
+    text-decoration: none;
+    color: #11101d;
+    display: flex;
+    align-items: center;
+    border-radius: 12px 1px 1px 12px;
+
+    background: #fff;
+   
+}
+
+.sidebar ul li i{
+    height: 50px;
+    min-width: 50px;
+    border-radius: 12px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.sidebar .links_name{
+    opacity: 1;
+    pointer-events: auto;
+    transition: all 0.5s ease;
+}
+
+.sidebar .profile_content{
+    position: absolute;
+    color: #fff;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.sidebar .profile_content .profile{
+    position: relative;
+    padding: 10px 6px;
+    height: 60px;
+    background: none;
+    transition: all 0.4s ease;
+}
+
+.sidebar.active .profile_content .profile{
+    background: #1d1b31;
+}
+
+.profile_content .profile .profile_details{
+    display: flex;
+    align-items: center;
+    opacity: 1;
+    pointer-events: auto;
+    white-space: nowrap;
+}
+
+.profile .profile_details img{
+    height: 45px;
+    width: 45px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.profile .profile_details .name_job{
+    margin-left: 10px;
+}
+
+.profile .profile_details .name{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.profile .profile_details .job{
+    font-size: 14px;
+}
+
+.profile #log_out{
+    position: absolute;
+    left: 88%;
+    bottom: 5px;
+    transform: translateX(-50%);
+    min-width: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    border-radius: 12px;
+    text-align: center;
+    transition: all 0.4s ease;
+    background: #1d1b31;
+} 
+
+.profile i{
+    color: #fff;
+}
+/* SIDE BAR END */
+
+/* DATA TABLE START */
+.admins h1{
+    margin-top: -4%;
+    margin-left: 19.5%;
+    font-size: 40px;
+    font-weight: 500;
+    color: #1d1b31;
+}
+
+/*ADD BUTTON START*/
+.add {
+    margin-left: 95%;
+    width: 45px;
+    margin-top: 2%;
+}
+button {
+    position: relative;
+    border: none;
+    background: transparent;
+    margin-top: 5px;
+    cursor: pointer;
+    outline-offset: 4px;
+    transition: filter 250ms;
+    user-select: none;
+    touch-action: manipulation;
+}
+
+button .front_add i{
+    font-size: 25px;
+    padding-top: 5px;
+} 
+
+.shadow_add {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    background: hsl(0deg 0% 0% / 0.25);
+    will-change: transform;
+    transform: translateY(2px);
+    transition: transform
+        600ms
+        cubic-bezier(.3, .7, .4, 1);
+}
+
+.edge_add {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    background: linear-gradient(
+        to left,
+        hsla(120deg, 100%, 16%) 0%,
+        hsla(120deg, 100%, 32%) 8%,
+        hsla(120deg, 100%, 32%) 92%,
+        hsla(120deg, 100%, 16%) 100%
+    );
+}
+
+.front_add{
+    display: block;
+    position: relative;
+    padding: 5px;
+    border-radius: 12px;
+    font-weight: 600;
+    color: white;
+    background: hsl(120, 95%, 45%);
+    will-change: transform;
+    transform: translateY(-4px);
+    transition: transform
+        600ms
+        cubic-bezier(.3, .7, .4, 1);
+}
+
+button:hover {
+    filter: brightness(110%);
+}
+
+button:hover .front_add {
+    transform: translateY(-6px);
+    transition: transform
+        250ms
+        cubic-bezier(.3, .7, .4, 1.5);
+}
+
+button:active .front_add {
+    transform: translateY(-2px);
+    transition: transform 34ms;
+}
+
+button:hover .shadow_add {
+    transform: translateY(4px);
+    transition: transform
+        250ms
+        cubic-bezier(.3, .7, .4, 1.5);
+}
+
+button:active .shadow_add {
+    transform: translateY(1px);
+    transition: transform 34ms;
+}
+
+button:focus:not(:focus-visible) {
+    outline: none;
+}
+/* ADD BUTTON END */
+
+/* MODA START */
+#add-modal-form{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 100;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-form{
+    background: #e6ecf0;
+    padding: 10px 0px 20px 0px;
+    border-radius: 10px;
+    width: 350px;
+    text-align: center;
+  
+
+}
+
+.top-form{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.top-form .close-modal-form{
+    cursor: pointer;
+    padding: 0 20px;
+    font-size: 30px;
+}
+
+.add-form h2{
+    letter-spacing: 2px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.add-form form input, .input--2{
+    width: 75%;
+    padding: 12px 12px;
+    box-sizing: border-box;
+    border: 1px solid #d0d5d8;
+    border-radius: 3px; 
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    
+    font-weight: 500;
+    font-size: 17px
+}
+
+.add-form button{
+    margin-top: 5%;
+    padding: 12px 0;
+    width: 75%;
+    background: hsl(144, 51%, 58%);
+    border: 0;
+    border-radius: 3px;
+    color: white;
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+.add-form .submit-btn {
+    margin-top: 5%;
+}
+
+.add-form .input {
+  width: 100%;
+  max-width: 300px;
+  height: 45px;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1.5px solid lightgrey;
+  outline: none;
+  transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+  box-shadow: 0px 0px 20px -18px;
+  margin-bottom: 5%;
+}
+
+.input:hover {
+  border: 2px solid lightgrey;
+  box-shadow: 0px 0px 20px -17px;
+}
+
+.input:active {
+  transform: scale(0.95);
+}
+
+.input:focus {
+  border: 2px solid grey;
+}
+
+.input--2{
+    font-size: 15px;
+}
+
+.form-container form .error-msg{
+    margin:10px 0;
+    display: block;
+    background: rgb(0, 0, 0);
+    color:#fff;
+    border-radius: 5px;
+    font-size: 20px;
+    padding:10px;
+ }
+/* MODAL END */
+
+/* MODA START */
+#edit-modal-form{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 100;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-form{
+    background: #e6ecf0;
+    padding: 10px 0px 20px 0px;
+    border-radius: 10px;
+    width: 350px;
+    text-align: center;
+}
+
+.top-form{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.top-form .close-modal-form{
+    cursor: pointer;
+    padding: 0 20px;
+    font-size: 30px;
+}
+
+.aeditdd-form h2{
+    letter-spacing: 2px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.adeditd-form form input, .input--2{
+    width: 75%;
+    padding: 12px 12px;
+    box-sizing: border-box;
+    border: 1px solid #d0d5d8;
+    border-radius: 3px; 
+    font-family: arial;
+    font-weight: 500;
+    font-size: 17px
+}
+
+.edit-form button{
+    margin-top: 5%;
+    padding: 12px 0;
+    width: 75%;
+    background: hsl(249, 94%, 48%);
+    border: 0;
+    border-radius: 3px;
+    color: white;
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+.edit-form .submit-btn {
+    margin-top: 5%;
+}
+
+.edit-form .input {
+  width: 100%;
+  max-width: 300px;
+  height: 45px;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1.5px solid lightgrey;
+  outline: none;
+  transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+  box-shadow: 0px 0px 20px -18px;
+  margin-bottom: 5%;
+}
+
+.input:hover {
+  border: 2px solid lightgrey;
+  box-shadow: 0px 0px 20px -17px;
+}
+
+.input:active {
+  transform: scale(0.95);
+}
+
+.input:focus {
+  border: 2px solid grey;
+}
+
+.input--2{
+    font-size: 15px;
+}
+
+.form-container form .error-msg{
+    margin:10px 0;
+    display: block;
+    background: rgb(0, 0, 0);
+    color:#fff;
+    border-radius: 5px;
+    font-size: 20px;
+    padding:10px;
+ }
+/* MODAL END */
+
+.dataTable {
+    display: flex;
+    margin-left: 17.7%;
+    width: 82.3%;
+}
+.content-table {
+    width: 100%;
+    margin: 10px;
+    border-collapse: collapse;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.content-table thead tr {
+    background-color: #11101d;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+    text-decoration: none;
+    font-weight: 500;
+    padding: 6px 20px;
+    font-size: 15px;
+}
+
+.content-table tbody tr td a{
+    padding: 5px;
+}
+
+.content-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+/* Operator Button Start */
+.edit{
+    color: blue;
+}
+
+.delete{
+    color: red;
+}
+
+td button{
+    font-size: 24px;
+    text-decoration: none;
+}
+/* Operator Button End */
+
+/* DATA TABLE END */
+
+/* PAGINATION START */
+.pagination{
+    position: absolute;
+    margin-left: 18.5%;
+
+}
+
+.p-10{
+    position: absolute;
+    margin-left: 18.5%;
+    margin-top: 3%;
+}
+/* PAGINATION END */
+.lahat{
+    margin-left: 20rem;
+}
+.row{
+    padding: 0px 0px;
+}
+#pls{
+    margin-left: 20rem;  
+}

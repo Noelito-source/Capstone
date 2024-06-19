@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodePen - Magic Navigation Menu Indicator using Html CSS &amp; Javascript</title>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="down.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<nav class="main-nav">
+	<ul class="main-nav__list">
+		<li class="main-nav__item main-nav__item--active">
+			<a href="#" class="main-nav__link">
+				<span class="main-nav__icon">
+					<ion-icon name="home-outline"></ion-icon>
+				</span>
+				<span class="main-nav__text">Home</span>
+			</a>
+		</li>
+		<li class="main-nav__item">
+			<a href="#" class="main-nav__link">
+				<span class="main-nav__icon">
+					<ion-icon name="person-outline"></ion-icon>
+				</span>
+				<span class="main-nav__text">Profile</span>
+			</a>
+		</li>
+		<li class="main-nav__item">
+			<a href="#" class="main-nav__link">
+				<span class="main-nav__icon">
+					<ion-icon name="chatbubble-outline"></ion-icon>
+				</span>
+				<span class="main-nav__text">Message</span>
+			</a>
+		</li>
+		<li class="main-nav__item">
+			<a href="#" class="main-nav__link">
+				<span class="main-nav__icon">
+					<ion-icon name="camera-outline"></ion-icon>
+				</span>
+				<span class="main-nav__text">Photos</span>
+			</a>
+		</li>
+		<li class="main-nav__item">
+			<a href="#" class="main-nav__link">
+				<span class="main-nav__icon">
+					<ion-icon name="settings-outline"></ion-icon>
+				</span>
+				<span class="main-nav__text">Settings</span>
+			</a>
+		</li>
+		<div class="main-nav__indicator"></div>
+	</ul>
+</nav>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

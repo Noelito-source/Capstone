@@ -1,0 +1,74 @@
+/* ACCOUNT DATA TABLE START */
+.dataTable {
+    margin-left: -.8%;
+    width: 100%;
+  }
+  .content-table {
+    width: 100%;
+    margin: 10px;
+    border-collapse: collapse;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .content-table thead tr {
+    background-color: #3a86ff;
+    color: #ffffff;
+    font-weight: bold;
+  }
+  
+  .content-table th,
+  .content-table td {
+    font-weight: 500;
+    padding: 6px 20px;
+    font-size: 15px;
+  }
+  
+  .content-table tbody tr td a{
+    text-decoration: none;
+  }
+  
+  .content-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+  }
+  
+  .content-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+  }
+  
+  /* Operator Button Start */
+  .view{
+    background: none;
+    border: none;
+    color: blue;
+  }
+  
+  .bill{
+    background: none;
+    border: none;
+    color: black;
+  }
+  
+  td button{
+    font-size: 24px;
+    text-decoration: none;
+  }
+  /* Operator Button End */
+  
+  /* ACCOUNT DATA TABLE END */
+  
+  /* PAGINATION START */
+  .pagination{
+    position: absolute;
+    margin-left: 5px;
+  
+  }
+  
+  .p-10{
+    position: absolute;
+    margin-left: 5px;
+    margin-top: 3%;
+  }
+  /* PAGINATION END */

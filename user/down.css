@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-family: "poppins";
+  box-sizing: border-box;
+}
+
+:root {
+  --body-color: #222327;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--body-color);
+}
+
+.main-nav {
+  position: relative;
+  width: 400px;
+  height: 70px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  transform: translateY(20rem);
+}
+.main-nav__list {
+  display: flex;
+  list-style: none;
+}
+.main-nav__item {
+  position: relative;
+  width: 70px;
+  height: 70px;
+}
+.main-nav__item:nth-child(2).main-nav__item--active ~ .main-nav__indicator {
+  transform: translateX(70px);
+}
+.main-nav__item:nth-child(3).main-nav__item--active ~ .main-nav__indicator {
+  transform: translateX(140px);
+}
+.main-nav__item:nth-child(4).main-nav__item--active ~ .main-nav__indicator {
+  transform: translateX(210px);
+}
+.main-nav__item:nth-child(5).main-nav__item--active ~ .main-nav__indicator {
+  transform: translateX(280px);
+}
+.main-nav__item--active .main-nav__icon {
+  transform: translateY(-33px);
+}
+.main-nav__item--active .main-nav__text {
+  transform: translateY(10px);
+  opacity: 1;
+}
+.main-nav__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.main-nav__icon {
+  font-size: 1.5rem;
+  line-height: 75px;
+  color: var(--body-color);
+  transition: 0.5s;
+  z-index: 1;
+}
+.main-nav__text {
+  font-weight: 400;
+  font-size: 0.75rem;
+  color: var(--body-color);
+  position: absolute;
+  letter-spacing: 0.05rem;
+  transition: 0.5s;
+  transform: translateY(20px);
+  opacity: 0;
+}
+.main-nav__indicator {
+  width: 70px;
+  height: 70px;
+  background-color: #4973ff;
+  border-radius: 50%;
+  position: absolute;
+  top: -50%;
+  border: 6px solid var(--body-color);
+  transition: 0.5s;
+}
+.main-nav__indicator::before, .main-nav__indicator::after {
+  content: "";
+  position: absolute;
+  background-color: transparent;
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  box-shadow: 0 -10px 0 0 var(--body-color);
+}
+.main-nav__indicator::before {
+  left: -22px;
+  border-top-right-radius: 20px;
+}
+.main-nav__indicator::after {
+  right: -22px;
+  border-top-left-radius: 20px;
+}
