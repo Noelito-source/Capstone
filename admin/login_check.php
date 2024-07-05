@@ -27,10 +27,10 @@ include('database/connection.php');
 			     exit;
 		     }
         }else{
-          $error = "Please check you email or address";
+          $error = "Please check you email or password";
         }
      }else{
-       $error = "Please check you email or address";
+       $error = "Please check you email or  password";
      }
 	 header("Location: lgn.php?error");
 	 exit;
